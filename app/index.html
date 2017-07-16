@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="rswebdesignApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">        
+	<meta name="author" content="Richard Searcy">
+
+        <title>Richard Searcy Studios</title>
+        
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+        
+        <!-- build:css styles/main.css -->
+        <link href="../bower_components/bootswatch-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet" />
+        <!--<link href="../bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />-->
+        <link href="styles/styles.css" rel="stylesheet" />
+        <!-- endbuild -->
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <div ui-view="header"></div>
+        
+        <div class="content-view" ui-view="content"></div>
+        
+        <div ui-view="footer"></div>
+        
+        <!-- build:js scripts/main.js -->
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers.js"></script>
+        <script src="scripts/services.js"></script>
+        <!-- endbuild -->
+        <!-- <script>
+            $(document).ready(function() {
+                // Enable smooth scrolling
+                $.localScroll();
+            });
+        </script>
+        
+        <script>
+            // Close the mobile navbar after clicking a link
+            $('.nav a').on('click', function(){
+                if ($(document).width() <= 767) {
+                $(".navbar-toggle").click();
+                }
+            });
+        </script>-->
+    </body>
+</html>
